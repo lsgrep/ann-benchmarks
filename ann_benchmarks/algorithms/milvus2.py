@@ -53,7 +53,7 @@ class Milvus(BaseANN):
     def set_query_arguments(self, nprobe):
         if nprobe > self._nlist:
             print('nprobe > nlist')
-            nprobe = self._nlist
+            self._nprobe = self._nlist
         else:
             self._nprobe = nprobe
 
